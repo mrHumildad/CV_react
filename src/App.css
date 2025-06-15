@@ -8,7 +8,7 @@
   --white:#eadede;
   --grey: #eadedea3;
 }
-.print {
+.print, .only-wide {
     display: none;
 }
 .accent {
@@ -61,11 +61,57 @@ li {
     font-weight: 700;
 }
 
-.other {
-    
+.user-title {
+  display: block;
+}
+
+.Footer {
+  background-color: var(--life);
+  height: 10vh;
+  width: 80%;
+  left: 50%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  animation: slideUp 2s forwards; /* Animation with duration */
+  animation-delay: 2s;
+  transform: translate(-50%, -0%);
+}
+
+.footer-butt {
+  background-color: var(--dark);
+  color: var(--white);
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+@keyframes slideUp {
+    from {
+        transform: translate(-50%, 100%); /* Start off-screen */
+        opacity: 0; /* Start as invisible */
+    }
+    to {
+        transform: translate(-50%, 0); /* End at its normal position */
+        opacity: 1; /* Make it visible */
+    }
 }
 
 @media only screen and (min-width: 700px) {
+  .only-wide {
+    display: inline;
+  }
+  .user-title {
+  display: inline;
+  }
   .other-skills {
     display: flex;
     justify-content: center;
@@ -85,3 +131,4 @@ li {
     gap: 1vh;
   }
 }
+

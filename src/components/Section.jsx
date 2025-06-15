@@ -1,4 +1,5 @@
 import React from 'react';
+import { translations } from '../trans';
 
 const Parraf = ({ text, boldText }) => {
     const boldWords = Array.isArray(boldText) ? boldText : [boldText];
@@ -32,12 +33,13 @@ const Item = ({itemData, className}) => {
         </li>
     );
 }
-const Section = ({name, sectionData, className='section'}) => {
-
+const Section = ({lang, name, className='section'}) => {
+    const sectionData = translations[lang][name] || [];
+    const titleText = translations[lang].sections[name]
     const items = sectionData.map((itemData, i) => <Item key={i} itemData={itemData} className={className}/>)
     return (
         <div className={className} id={name}>
-            <span className={`${className}-title`}>{name}</span>
+            <span className={`${className}-title`}>{titleText}</span>
             <div className='items-container'>
               {items}
             </div>

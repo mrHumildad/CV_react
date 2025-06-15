@@ -6,8 +6,7 @@ export const translations ={
     "Videomaker",
     "Creative Technologist"
   ],
-  skills: {
-    IT: [
+    it: [
       {
         title: "GNU-Linux",
         period: "",
@@ -52,9 +51,7 @@ export const translations ={
       {title: 'Passionate learner', description: "in both self-taught and peer-to-peer environments.", accent: []},
       {title: 'Sense of humor', description: "helps me reflect on reality and resolve conflicts.", accent: []},
       {title: 'Availability', description: "is immediate for full-time or part-time, onsite or remote work.", accent: []}
-    ]
-  },
-  bio: {
+    ],
     studies: [
       {
         title: "42Barcelona",
@@ -102,8 +99,7 @@ export const translations ={
         description: "I'm currently developing a hybrid RPG and football management game using the SERN stack, planned for release in September 2025.",
         accent: []
       }
-    ]
-  },
+    ],
   sections: {
     work: "Selected Work in IT",
     studies: "Studies",
@@ -118,3 +114,9 @@ export const translations ={
 }}
 
 
+export const links = {
+    telephone: '+34 667 895 921',
+  mail: 'notaromaximilien@gmail.com',
+  github: 'https://github.com/mrHumildad',
+  linkedin: 'https://www.linkedin.com/in/maximilien-notaro-486aa7346/',
+}
