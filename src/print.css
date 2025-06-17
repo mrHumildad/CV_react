@@ -1,0 +1,100 @@
+@media print {
+@page {
+  margin: 0;
+  size: A4; /* auto is the initial value */
+}
+html {
+  font-size: 11pt;
+  width: 210mm;
+  height: 297mm;
+}
+:root {
+    --white : #ffffff;
+    --black: #000000;
+    --dark: #ffffff;
+    --life: #ffffff;
+    --grey: #555555;
+    font-size: 11pt;
+}
+.print {
+  display: block;
+}
+.no-print {
+  display: none;
+}
+#header {
+  position: relative;
+  height: auto;
+  padding: 8pt;
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+}
+#qr {
+  height: 50pt;
+  width: 50pt;
+}
+.item, .other-title{
+  margin-bottom: 24pt;;
+}
+#headline {
+    font-size: 12pt;
+}
+#name {
+    color: var(--black);
+    font-size: 16pt;
+    font-weight: 700;
+  }
+
+
+.item-title, .other-title{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--grey);
+}ç
+.user-title {
+  display: inline;
+  }
+.separator, .user-title {
+  display: inline;
+}
+.item, .other-title{
+  margin-bottom: 14pt;
+}
+.section-title {
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 14pt;
+}
+.items-container, #other-skills{
+  margin-top: 14pt;
+}
+
+.item-title, .other-title{
+    text-decoration-color: var(--grey);
+    text-decoration-thickness: 1pt;
+}
+#other-skills {
+    display: flex;
+    justify-content: center;
+    gap: 10pt;
+    height: auto;
+    min-height: 0;
+  }
+  #other-skills {
+    display: flex;
+    justify-content: center;
+    gap: 10pt;
+    height: auto;
+    min-height: 0;
+  }
+   .other {
+    width: 31%;
+    min-height: 0;      /* Remove or set to 0 if you want no minimum */
+    height: auto;       /* Let height be determined by content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* or center */
+    justify-content: flex-start; /* Remove space-evenly if not needed */
+  }
+}

@@ -8,46 +8,56 @@
   --white:#eadede;
   --grey: #eadedea3;
 }
-.print, .only-wide {
+.print, .separator {
     display: none;
 }
 .accent {
     font-weight: 700;
 }
+
+#presentation, .section {
+    margin-bottom: 2vh;;
+}
+.item, .other-title{
+  margin-bottom: 1.2vh;;
+}
 body {  
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 10px;
+    margin: 0%;
+    padding: 0;
     background-color: var(--white);
     text-align: center;
-    margin-block-start: 0;
-    margin-block-end: 0;
 }
 li {
   list-style: none;
 }
 #name {
     color: var(--white);
-    background-color: var(--life);
-    margin-top: 2vh;
-    border-radius: 15%; 
-}
+    font-size: 5vh;
+    font-weight: 700;
+  }
 
 #headline {
     font-family: "Kode Mono", monospace;
     font-weight: bold;
     font-optical-sizing: auto;
     margin: auto;
+    font-size: 2.5vh;
 }
 
-#IT {
-  text-align: left;
-}
 
 .section-title {
     color: var(--white);
     background-color: var(--dark);
-    border-radius: 15%; 
+    display: flex;                /* Use flexbox */
+    align-items: center;          /* Center vertically */
+    justify-content: center;      /* Center horizontally */
+    height: 5vh;
+    font-size: 3vh;
+    width: 100%;
+}
+.items-container, #other-skills{
+  margin-top: 2vh;
 }
 
 .item-title, .other-title{
@@ -79,6 +89,20 @@ li {
   animation: slideUp 2s forwards; /* Animation with duration */
   animation-delay: 2s;
   transform: translate(-50%, -0%);
+}
+#header {
+  position: fixed;
+  height: 7vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: var(--life);
+  color: var(--white);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
 }
 
 .footer-butt {
@@ -112,16 +136,21 @@ li {
   .user-title {
   display: inline;
   }
-  .other-skills {
+  #other-skills {
     display: flex;
     justify-content: center;
     gap: 10px;
+    height: auto;
+    min-height: 0;
   }
   .other {
     width: 31%;
-     min-height: 250px;
-
-
+    min-height: 0;      /* Remove or set to 0 if you want no minimum */
+    height: auto;       /* Let height be determined by content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* or center */
+    justify-content: flex-start; /* Remove space-evenly if not needed */
   }
   .items-container {
     display: flex;
