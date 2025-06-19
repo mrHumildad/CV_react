@@ -30,15 +30,31 @@ html {
   color: var(--black);
   text-align: center;
 }
+.printPres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.print-link {
+  font-size: 10pt;
+  text-align: left;
+
+}
+#links {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
 #qr {
   height: 50pt;
   width: 50pt;
 }
-.item, .other-title{
-  margin-bottom: 24pt;;
-}
+
 #headline {
     font-size: 12pt;
+    display: block;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
 }
 #name {
     color: var(--black);
@@ -46,11 +62,11 @@ html {
     font-weight: 700;
   }
 
-
 .item-title, .other-title{
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: var(--grey);
+    margin-bottom: 0cm;
 }ç
 .user-title {
   display: inline;
@@ -58,9 +74,7 @@ html {
 .separator, .user-title {
   display: inline;
 }
-.item, .other-title{
-  margin-bottom: 14pt;
-}
+
 .section-title {
     color: var(--black);
     background-color: var(--white);

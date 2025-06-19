@@ -23,11 +23,10 @@ const Presentation = ({userData}) => {
       <span id="headline">
         <Headline titles={userData.titles} />
         <div className='printPres print'>
-          <div className='qr-container'>
+          <div id='qr-container'>
             <img src='src/assets/qr-code.png' alt="QR Code" id='qr' />
-            <span className='qr-label'>scan to access the responsive version.</span>
           </div>
-          <ul className='links'>
+          <ul id='links'>
               <li className='print-link' id='telephone' ><IoCall/>{links.telephone}</li>
               <li className='print-link' id='mail' ><IoMail/>{links.mail}</li>
               <li className='print-link' id='linkedin' ><IoLogoLinkedin/>{links.linkedin}</li>

@@ -63,34 +63,34 @@ export const translations = {
         title: "D.A.M.S.",
         period: "2006",
         description: "Bachelor’s Degree in Arts, Music, and Entertainment with a specialization in Cinematography, University of Bologna.",
-        accent: []
+        accent: ['Cinematography']
       }
     ],
     work: [
       {
         title: "GNU/Linux Consultant",
         period: "2010 to present",
-        description: "Providing consultancy services for Linux-based systems, with a focus on installation, configuration, maintenance, and system administration. Key areas of expertise include: Web servers and database management, Networking setup and troubleshooting, SMB services and file sharing and user and permission management, BackUp and Restoring.",
+        description: "Web servers and database management, Networking setup and troubleshooting, SMB services and file sharing and user and permission management, BackUp and Restoring.",
         accent: []
       },
       {
         title: "QA tester",
         period: "Jun 2022 - Mar 2023",
         description: "Manual testing for an eCommerce company using Scrum. Functional testing (regression, smoke, sanity, integration), test planning and case design, bug reporting, API testing (Postman, SOAP UI), white/black box. Tools: Jira, MySQL, MSSQL.",
-        accent: []
+        accent: ['Postman', 'MySQL']
       }
     ],
     projects: [
       {
         title: "PlantaVibras",
         period: "Apr 2024 to present",
-        description: "At PlantaVibras, I develop and maintain the website, build interactive web applications, and script performances for live events. We experiment with code-generated vibrations and explore how technology can interact with the human body and perception. My role blends software development with audiovisual expression, focusing on generative visuals, sound, and real-time interaction.",
-        accent: []
+        description: "We experiment with code-generated vibrations and explore how technology can interact with the human body and perception. My role blends software development with audiovisual expression, focusing on generative visuals, sound, and real-time interaction.",
+        accent: ['software', 'development']
       },
       {
         title: "Perlitas Producciones",
         period: "2009 to present",
-        description: "As co-founder of Perlitas Producciones, I worked on the creation of B-series short films and underground music videos, blending experimental aesthetics with narrative innovation. Our work earned recognition at independent festivals, winning several awards for originality and creative direction.",
+        description: "As co-founder of Perlitas Producciones, I work on the creation of B-series short films and underground music videos, blending experimental aesthetics with narrative innovation.",
         accent: []
       },
       {
