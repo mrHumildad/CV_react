@@ -28,12 +28,13 @@ function App() {
       <Section lang={lang} name={'work'} />
       <Section lang={lang} name={'studies'} />
       <Section lang={lang} name={'projects'} />
-      <Section lang={lang} name={'it'} />
-      <span className='section-title'>{translations[lang].sections.other}</span>
-      <div id='other-skills'>
-        <Section lang={lang} name={'languages'} className={'other'} />
-        <Section lang={lang} name={'creative'} className={'other'} />
-        <Section lang={lang} name={'social'} className={'other'} />
+      {/* <Section lang={lang} name={'it'} /> */}
+      <span className='section-title'>{translations[lang].sections.skills}</span>
+      <div id='skills'>
+        <Section lang={lang} name={'languages'} className={'skill'} />
+        <Section lang={lang} name={'it'} className={'skill'} />
+        {/* <Section lang={lang} name={'creative'} className={'other'} />
+        <Section lang={lang} name={'social'} className={'other'} /> */}
       </div>
       <div className={'no-print'} style={{height: '10vh'}}></div>
       <Footer changeLang={changeLang}/>

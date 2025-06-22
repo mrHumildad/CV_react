@@ -33,14 +33,13 @@ export const translations = {
       }
     ],
     languages: [
-      {title:'English', description: 'fluent', accent: []},
-      {title:'Spanish', description: 'almost native', accent: []},
-      {title:'Italian', description: 'native', accent: []},
-      {title:'French', description: 'proficient', accent: []},
-      {title:'Catalan', description: 'conversational', accent: []},
-      {title:'Salentinian', description: 'conversational', accent: []}
+      {title:'English', description: 'fluent', accent: [], abbr: 'en'}, 
+      {title:'Spanish', description: 'almost native', accent: [], abbr: 'es'}, 
+      {title:'Italian', description: 'native', accent: [], abbr: 'it'}, 
+      {title:'French', description: 'proficient', accent: [], abbr: 'fr'},  
+      {title:'Catalan', description: 'conversational', accent: [], abbr: 'cat'},
     ],
-    creative: [
+/*     creative: [
       {title: 'Videomaking', description: "shorts and music videos from scripting to lighting, filming, and directing.", accent: []},
       {title: 'Video Post Production', description: "editing, special effects, and color grading using DaVinci Resolve.", accent: []},
       {title: 'NFT & Crypto', description: "explorer and trader, researching decentralization and gamification applications.", accent: []},
@@ -51,7 +50,7 @@ export const translations = {
       {title: 'Passionate learner', description: "in both self-taught and peer-to-peer environments.", accent: []},
       {title: 'Sense of humor', description: "helps me reflect on reality and resolve conflicts.", accent: []},
       {title: 'Availability', description: "is immediate for full-time or part-time, onsite or remote work.", accent: []}
-    ],
+    ], */
     studies: [
       {
         title: "42Barcelona",
@@ -84,19 +83,19 @@ export const translations = {
       {
         title: "PlantaVibras",
         period: "Apr 2024 to present",
-        description: "We experiment with code-generated vibrations and explore how technology can interact with the human body and perception. My role blends software development with audiovisual expression, focusing on generative visuals, sound, and real-time interaction.",
+        description: "We experiment with code-generated vibrations and explore how technology can interact with the human body and perception. My role blends software development with hardware repurpusing, building audiovisual tools from recycled materials and Arduino coding, and creating interactive web applications.",
         accent: ['software', 'development']
       },
       {
         title: "Perlitas Producciones",
         period: "2009 to present",
-        description: "As co-founder of Perlitas Producciones, I work on the creation of B-series short films and underground music videos, blending experimental aesthetics with narrative innovation.",
+        description: "As co-founder, I work on the creation of B-series short films and underground music videos. Depending on the project, my task goes from preproduction to postproduction(editing, FX, color grading using DaVinci Resolve), from scripting to lighting, filming, and directing.",
         accent: []
       },
       {
         title: "D.W.O.S.",
         period: "2022 to present",
-        description: "I'm currently developing a hybrid RPG and football management game using the SERN stack, planned for release in September 2025.",
+        description: "I'm currently developing a hybrid RPG and football management game using the SERN stack (SQL, Express.js, React.js, and Node.js.), planned to implement NFTs and cryptocurrencies.",
         accent: []
       }
     ],
@@ -106,7 +105,7 @@ export const translations = {
     projects: "Own Projects",
     footer: "Footer",
     it: "IT Skills",
-    other: "Other Skills",
+    skills: "Skills",
     languages: "Languages",
     creative: "Creative",
     social: "Social"

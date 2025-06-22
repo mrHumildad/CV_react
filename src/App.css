@@ -18,7 +18,7 @@
 #presentation, .section {
     margin-bottom: 2vh;;
 }
-.item, .other-title{
+.item, .skill-title{
   margin-bottom: 1.2vh;;
 }
 body {  
@@ -56,18 +56,18 @@ li {
     font-size: 3vh;
     width: 100%;
 }
-.items-container, #other-skills{
+.items-container, #skills{
   margin-top: 2vh;
 }
 
-.item-title, .other-title{
+.item-title, .skill-title{
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: var(--life);
     text-decoration-thickness: 4px;
 }
 
-.item-title-other {
+.item-title-skill {
     font-weight: 700;
 }
 
@@ -130,28 +130,43 @@ li {
 }
 
 @media only screen and (min-width: 700px) {
-  .only-wide {
+  .separator {
     display: inline;
   }
   .user-title {
   display: inline;
   }
-  #other-skills {
+  #skills {
     display: flex;
     justify-content: center;
     gap: 10px;
-    height: auto;
-    min-height: 0;
+    align-items: stretch; /* Make all columns the same height */
   }
-  .other {
+  .skill {
+  flex: 1 1 0; /* All skills take equal space by default */
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+  #it {
+    flex-grow: 2;
+  }
+#languages .items-container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Distribute items evenly */
+  height: 100%;
+}
+  /* .skill {
     width: 31%;
-    min-height: 0;      /* Remove or set to 0 if you want no minimum */
-    height: auto;       /* Let height be determined by content */
+    min-height: 0;     
+    height: auto;      
     display: flex;
     flex-direction: column;
-    align-items: center; /* or center */
-    justify-content: flex-start; /* Remove space-evenly if not needed */
-  }
+    align-items: center; /*
+    justify-content: flex-start; 
+  } */
   .items-container {
     display: flex;
     height: 100%;
