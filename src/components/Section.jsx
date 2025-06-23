@@ -30,6 +30,7 @@ const Item = ({itemData, className}) => {
             <span className={titleClass}>{itemData.title + ' '}</span>
             {period && <span className='period'>{period}</span>}
             <Parraf text={itemData.description} boldText={itemData.accent}/>
+            <span className='section-link'>{itemData?.link}</span>
         </li>
     );
 }
@@ -39,7 +40,10 @@ const Section = ({lang, name, className='section'}) => {
     const items = sectionData.map((itemData, i) => <Item key={i} itemData={itemData} className={className}/>)
     return (
         <div className={className} id={name}>
-            <span className={`${className}-title`}>{titleText}</span>
+            <span className={`${className}-title`}>
+              {titleText}
+              {name=== 'projects' && <span className='no-print'>{translations[lang].sections.click}</span>}
+            </span>
             <div className='items-container'>
               {items}
             </div>

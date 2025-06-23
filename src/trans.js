@@ -1,35 +1,46 @@
+export const links = {
+  telephone: '+34 667 895 921',
+  mail: 'notaromaximilien@gmail.com',
+  github: 'https://github.com/mrHumildad',
+  linkedin: 'https://www.linkedin.com/in/maximilien-notaro-486aa7346/',
+  plantavibras:'https://www.plantavibras.com/',
+  perlitas:'https://mrhumildad.github.io/perlitas',
+  dwos: 'https://mrhumildad.github.io/dwos',
+  gitTemptate: 'https://github.com/mrHumildad/temptate'
+}
+
 export const translations = {
   en: {
-  name: "Maximilien Notaro",
-  titles: [
-    "Full-Stack Developer",
-    "Videomaker",
-    "Creative Technologist"
-  ],
+    name: "Maximilien Notaro",
+    titles: [
+      "Full-Stack Developer",
+      "Videomaker",
+      "Creative Technologist"
+    ],
     it: [
       {
         title: "GNU-Linux",
         period: "",
-        description: 'Consultancy in GNU/Linux-based systems: system administration, shell scripting, servers, databases, and networks.',
-        accent: ["shell", "databases", "networks"]
+        description: "Freelance consultant in GNU/Linux systems: system administration, shell scripting, servers, databases, and networks. Focus on troubleshooting and automation.",
+        accent: ["shell scripting", "databases", "networks", "automation"]
       },
       {
         title: "Web Design",
         period: "",
-        description: 'Building responsive and interactive web pages using HTML, CSS, and Javascript. Experienced with modern frameworks such as ReactJS for dynamic user interfaces.',
-        accent: ["Javascript", "ReactJS"]
+        description: "Responsive, interactive web pages with HTML, CSS, JavaScript. Skilled in ReactJS and modern web standards.",
+        accent: ["JavaScript", "ReactJS", "web standards"]
       },
       {
         title: "Software Engineering",
         period: "",
-        description: 'Experience in low-level programming and project development using the C lenguage, with a focus on efficient code structure and problem-solving. Also developing in NodeJS using libraries like for web scraping and testing, jimp for batch processing images or FS for file system automation',
-        accent: ["C lenguage", "NodeJS"]
+        description: "Project development in C and NodeJS, focusing on efficient code, automation, and problem-solving. Experience with data structures and APIs.",
+        accent: ["C language", "NodeJS", "automation", "data structures", "APIs"]
       },
       {
         title: "Robotics Art",
         period: "",
-        description: 'Exploring creative use of Arduino for the creation of interactive instruments for the Plantavibras proyect.',
-        accent: ["Arduino"]
+        description: "Creative use of Arduino for interactive instruments and installations (Plantavibras project).",
+        accent: ["Arduino", "interactive instruments"]
       }
     ],
     languages: [
@@ -39,78 +50,111 @@ export const translations = {
       {title:'French', description: 'proficient', accent: [], abbr: 'fr'},  
       {title:'Catalan', description: 'conversational', accent: [], abbr: 'cat'},
     ],
-/*     creative: [
-      {title: 'Videomaking', description: "shorts and music videos from scripting to lighting, filming, and directing.", accent: []},
-      {title: 'Video Post Production', description: "editing, special effects, and color grading using DaVinci Resolve.", accent: []},
-      {title: 'NFT & Crypto', description: "explorer and trader, researching decentralization and gamification applications.", accent: []},
-      {title: 'Cyber Performances', description: "combining audiovisual livecoding and DIY sonic tools.", accent: []}
+    creative: [
+      {
+        title: 'Videomaking',
+        description: "Shorts and music videos: scripting, lighting, filming, directing.",
+        accent: ["scripting", "lighting", "directing"]
+      },
+      {
+        title: 'Video Post Production',
+        description: "Editing, special effects, color grading with DaVinci Resolve.",
+        accent: ["DaVinci Resolve", "color grading"]
+      },
+      {
+        title: 'NFT & Crypto',
+        description: "Researching decentralization and gamification.",
+        accent: ["decentralization", "gamification"]
+      },
+      {
+        title: 'Cyber Performances',
+        description: "Audiovisual livecoding and DIY sonic tools.",
+        accent: ["livecoding", "DIY"]
+      }
     ],
     social: [
-      {title: 'International attitude', description: "with Italian-French heritage and residing in Barcelona since 2006.", accent: []},
-      {title: 'Passionate learner', description: "in both self-taught and peer-to-peer environments.", accent: []},
-      {title: 'Sense of humor', description: "helps me reflect on reality and resolve conflicts.", accent: []},
-      {title: 'Availability', description: "is immediate for full-time or part-time, onsite or remote work.", accent: []}
-    ], */
+      {
+        title: 'International Attitude',
+        description: "Italian-French heritage, Barcelona resident since 2006.",
+        accent: ["international"]
+      },
+      {
+        title: 'Passionate Learner',
+        description: "Self-taught and peer-to-peer environments.",
+        accent: ["self-taught", "peer-to-peer"]
+      },
+      {
+        title: 'Sense of Humor',
+        description: "Helps reflect and resolve conflicts.",
+        accent: ["conflict resolution"]
+      },
+      {
+        title: 'Availability',
+        description: "Immediate for full/part-time, onsite or remote.",
+        accent: ["immediate", "remote"]
+      }
+    ],
     studies: [
       {
         title: "42Barcelona",
         period: "2023/24",
-        description: "After years of self-taught coding, I joined to deepen my knowledge and benchmark my skills. I gained a solid understanding of concepts like memory management, pointers, data structures, and clean code principles.",
-        accent: []
+        description: "Completed an iompleted, an iompleted, an intens curriculum focused on advanced C programming, memoryr-driv curriculum focused on advanced C and programmin. Developed teamwork and problem-solving skills through collaborative projects and code reviewsg, memoryamming curriculum focused on advanced C and programmin. Developed teamwork and problem-solving skills through collaborative projects and code reviewsg, memory management, pointers, data structures, and clean code. Developed teamwork and problem-solving skills through collaborative projects and code reviews.",
+        accent: ["memory management", "data structures", "clean code", "peer-learning", "peer-learning", "peer-learning"]
       },
       {
         title: "D.A.M.S.",
         period: "2006",
-        description: "Bachelor’s Degree in Arts, Music, and Entertainment with a specialization in Cinematography, University of Bologna.",
-        accent: ['Cinematography']
+        description: "Bachelor’s in Arts, Music, and Entertainment, Cinematography specialization, University of Bologna.",
+        accent: ["Cinematography"]
       }
     ],
     work: [
       {
         title: "GNU/Linux Consultant",
         period: "2010 to present",
-        description: "Web servers and database management, Networking setup and troubleshooting, SMB services and file sharing and user and permission management, BackUp and Restoring.",
-        accent: []
+        description: "Consulting for web servers, database management, networking, SMB services, user/permission management, backup and restore.",
+        accent: ["database management", "networking", "backup"]
       },
       {
-        title: "QA tester",
+        title: "QA Tester",
         period: "Jun 2022 - Mar 2023",
-        description: "Manual testing for an eCommerce company using Scrum. Functional testing (regression, smoke, sanity, integration), test planning and case design, bug reporting, API testing (Postman, SOAP UI), white/black box. Tools: Jira, MySQL, MSSQL.",
-        accent: ['Postman', 'MySQL']
+        description: "Manual software testing in an Agile Scrum team for an eCommerce company. Designed and executed regression, integration, and API tests (Postman, SOAP UI), reported bugs, and managed test cases using Jira. Validated data with MySQL and contributed to process improvements and product quality.",
+        accent: ["Postman", "Jira", "MySQL", "Scrum", "API testing"]
       }
     ],
     projects: [
       {
         title: "PlantaVibras",
         period: "Apr 2024 to present",
-        description: "We experiment with code-generated vibrations and explore how technology can interact with the human body and perception. My role blends software development with hardware repurpusing, building audiovisual tools from recycled materials and Arduino coding, and creating interactive web applications.",
-        accent: ['software', 'development']
+        description: "Lead developer for PlantaVibras, building software and loper foas, building software and hardware for iapplicationsactive audiovisual tool. Designed custom interfaces and scripts for real-time generative visuals and sound, bridging technology and art.",
+        accent: ["software", "hardware", "web apps", "audiovisual", "audiovisual"]
       },
       {
         title: "Perlitas Producciones",
         period: "2009 to present",
-        description: "As co-founder, I work on the creation of B-series short films and underground music videos. Depending on the project, my task goes from preproduction to postproduction(editing, FX, color grading using DaVinci Resolve), from scripting to lighting, filming, and directing.",
-        accent: []
+        description: "Co-founder and producer of B-series short films and music videos. Managed all stages from pre-production to post-production, including scripting, directing, editing, and team coordination. Recognized in independent festivals for originality and creative direction.",
+        accent: ["pre-production", "post-production", "editing", "creative direction"]
       },
       {
         title: "D.W.O.S.",
         period: "2022 to present",
-        description: "I'm currently developing a hybrid RPG and football management game using the SERN stack (SQL, Express.js, React.js, and Node.js.), planned to implement NFTs and cryptocurrencies.",
-        accent: []
+        description: "Hybrid RPG/football management game using SERN stack, with NFT/crypto integration.",
+        accent: ["SERN stack", "NFT", "crypto"]
       }
     ],
-  sections: {
-    work: "Selected Work in IT",
-    studies: "Studies",
-    projects: "Own Projects",
-    footer: "Footer",
-    it: "IT Skills",
-    skills: "Skills",
-    languages: "Languages",
-    creative: "Creative",
-    social: "Social"
+    sections: {
+      work: "Selected Work in IT",
+      studies: "Studies",
+      projects: "Own Projects",
+      click: " (click to open)",
+      footer: "Footer",
+      it: "IT Skills",
+      other: "Other Skills",
+      languages: "Languages",
+      creative: "Creative",
+      social: "Social"
+    },
   },
-},
   es: {
     name: "Maximilien Notaro",
     titles: [
@@ -153,16 +197,48 @@ export const translations = {
       {title:'Salentino', description: 'conversacional', accent: []}
     ],
     creative: [
-      {title: 'Videocreación', description: "cortos y videoclips desde el guion hasta la iluminación, filmación y dirección.", accent: []},
-      {title: 'Postproducción de Video', description: "edición, efectos especiales y corrección de color con DaVinci Resolve.", accent: []},
-      {title: 'NFT & Cripto', description: "explorador y trader, investigando aplicaciones de descentralización y gamificación.", accent: []},
-      {title: 'Ciberperformances', description: "combinando livecoding audiovisual y herramientas sonoras DIY.", accent: []}
+      {
+        title: 'Videocreación',
+        description: "Producción y dirección de cortos y videoclips, gestionando todas las etapas desde el concepto, guion y iluminación hasta la filmación, dirección y edición final. Experiencia en colaboración con artistas y equipos para entregar contenido visual creativo.",
+        accent: ["guion", "iluminación", "dirección", "edición final", "colaboración"]
+      },
+      {
+        title: 'Postproducción de Video',
+        description: "Habilidad en edición, adición de efectos especiales y realización de corrección de color avanzada usando DaVinci Resolve. Capaz de mejorar la calidad del metraje y la narrativa a través de técnicas de postproducción para resultados profesionales.",
+        accent: ["DaVinci Resolve", "corrección de color", "edición", "efectos especiales"]
+      },
+      {
+        title: 'NFT & Cripto',
+        description: "Activo en la investigación y experimentación con descentralización, gamificación y tecnologías blockchain. Participación en proyectos de NFT y cripto, explorando sus aplicaciones en arte digital y experiencias interactivas.",
+        accent: ["descentralización", "NFT", "cripto", "gamificación", "blockchain"]
+      },
+      {
+        title: 'Ciberperformances',
+        description: "Diseño y realización de shows audiovisuales en livecoding, creando visuales y paisajes sonoros en tiempo real con herramientas electrónicas DIY. Enfoque en performances experimentales que combinan tecnología, música y arte.",
+        accent: ["livecoding", "DIY", "audiovisual", "performance", "tiempo real"]
+      }
     ],
     social: [
-      {title: 'Actitud internacional', description: "con herencia italo-francesa y residiendo en Barcelona desde 2006.", accent: []},
-      {title: 'Aprendiz apasionado', description: "tanto autodidacta como en entornos colaborativos.", accent: []},
-      {title: 'Sentido del humor', description: "me ayuda a reflexionar y resolver conflictos.", accent: []},
-      {title: 'Disponibilidad', description: "inmediata para trabajo a tiempo completo o parcial, presencial o remoto.", accent: []}
+      {
+        title: 'Actitud internacional',
+        description: "Nacido de padres italo-franceses y viviendo en Barcelona desde 2006, prospero en entornos multiculturales. Cómodo trabajando con equipos diversos y adaptándome a nuevas culturas y perspectivas.",
+        accent: ["internacional", "multicultural", "adaptabilidad"]
+      },
+      {
+        title: 'Aprendiz apasionado',
+        description: "Impulsado por la curiosidad y el amor por aprender, soy autodidacta en muchas áreas y disfruto de entornos colaborativos y entre pares. Siempre buscando ampliar mis habilidades y compartir conocimientos con otros.",
+        accent: ["autodidacta", "colaborativo", "entre pares", "curiosidad"]
+      },
+      {
+        title: 'Sentido del humor',
+        description: "Valoro el humor como una herramienta para construir relaciones, aliviar tensiones y fomentar dinámicas de equipo positivas. Creo que un buen sentido del humor ayuda a reflexionar, conectar y resolver conflictos.",
+        accent: ["resolución de conflictos", "trabajo en equipo", "humor"]
+      },
+      {
+        title: 'Disponibilidad',
+        description: "Disponible inmediatamente para posiciones a tiempo completo o parcial, tanto en el lugar como de forma remota. Flexible y abierto a nuevas oportunidades y desafíos.",
+        accent: ["inmediato", "remoto", "flexibilidad"]
+      }
     ],
     studies: [
       {
@@ -266,16 +342,48 @@ export const translations = {
       {title:'Salentino', description: 'conversazione', accent: []}
     ],
     creative: [
-      {title: 'Videomaking', description: "corti e videoclip dalla sceneggiatura all’illuminazione, riprese e regia.", accent: []},
-      {title: 'Postproduzione Video', description: "montaggio, effetti speciali e color grading con DaVinci Resolve.", accent: []},
-      {title: 'NFT & Crypto', description: "esploratore e trader, ricerca su decentralizzazione e gamification.", accent: []},
-      {title: 'Cyber Performance', description: "combinando livecoding audiovisivo e strumenti sonori DIY.", accent: []}
+      {
+        title: 'Videomaking',
+        description: "Produzione e regia di cortometraggi e videoclip musicali, gestendo tutte le fasi dalla concezione, sceneggiatura e illuminazione alle riprese, regia e montaggio finale. Esperienza nella collaborazione con artisti e team per fornire contenuti visivi creativi.",
+        accent: ["sceneggiatura", "illuminazione", "regia", "montaggio finale", "collaborazione"]
+      },
+      {
+        title: 'Postproduzione Video',
+        description: "Abile nel montaggio, aggiunta di effetti speciali e correzione colore avanzata utilizzando DaVinci Resolve. Capace di migliorare la qualità delle riprese e la narrazione attraverso tecniche di post-produzione per risultati professionali.",
+        accent: ["DaVinci Resolve", "correzione colore", "montaggio", "effetti speciali"]
+      },
+      {
+        title: 'NFT & Crypto',
+        description: "Attivo nella ricerca e sperimentazione con decentralizzazione, gamification e tecnologie blockchain. Partecipato a progetti NFT e cripto, esplorando le loro applicazioni nell'arte digitale e nelle esperienze interattive.",
+        accent: ["decentralizzazione", "NFT", "cripto", "gamification", "blockchain"]
+      },
+      {
+        title: 'Cyber Performance',
+        description: "Progettato e realizzato spettacoli audiovisivi di livecoding, creando visual e paesaggi sonori in tempo reale con strumenti elettronici DIY. Focalizzato su performance sperimentali che fondono tecnologia, musica e arte.",
+        accent: ["livecoding", "DIY", "audiovisuale", "performance", "tempo reale"]
+      }
     ],
     social: [
-      {title: 'Attitudine internazionale', description: "con origini italo-francesi e residente a Barcellona dal 2006.", accent: []},
-      {title: 'Apprendimento appassionato', description: "sia autodidatta che in ambienti collaborativi.", accent: []},
-      {title: 'Senso dell’umorismo', description: "mi aiuta a riflettere e risolvere conflitti.", accent: []},
-      {title: 'Disponibilità', description: "immediata per lavoro full-time o part-time, in presenza o remoto.", accent: []}
+      {
+        title: 'Attitudine internazionale',
+        description: "con origini italo-francesi e residente a Barcellona dal 2006, prospero in ambienti multiculturali. Comodo a lavorare con team diversi e ad adattarsi a nuove culture e prospettive.",
+        accent: ["internazionale", "multiculturale", "adattabilità"]
+      },
+      {
+        title: 'Apprendimento appassionato',
+        description: "Guidato dalla curiosità e dall'amore per l'apprendimento, sono autodidatta in molte aree e mi piace lavorare in ambienti collaborativi e peer-to-peer. Sempre alla ricerca di ampliare le mie competenze e condividere conoscenze con gli altri.",
+        accent: ["autodidatta", "collaborativo", "peer-to-peer", "curiosità"]
+      },
+      {
+        title: 'Senso dell’umorismo',
+        description: "Valuto l'umorismo come uno strumento per costruire rapporti, alleviare tensioni e favorire dinamiche positive nel team. Credo che un buon senso dell'umorismo aiuti a riflettere, connettersi e risolvere conflitti.",
+        accent: ["risoluzione dei conflitti", "lavoro di squadra", "umorismo"]
+      },
+      {
+        title: 'Disponibilità',
+        description: "Disponibile immediatamente per posizioni a tempo pieno o parziale, sia in sede che da remoto. Flessibile e aperto a nuove opportunità e sfide.",
+        accent: ["immediato", "remoto", "flessibilità"]
+      }
     ],
     studies: [
       {
@@ -379,16 +487,48 @@ export const translations = {
       {title:'Salentí', description: 'conversacional', accent: []}
     ],
     creative: [
-      {title: 'Videocreació', description: "curts i videoclips des del guió fins a la il·luminació, filmació i direcció.", accent: []},
-      {title: 'Postproducció de Vídeo', description: "edició, efectes especials i correcció de color amb DaVinci Resolve.", accent: []},
-      {title: 'NFT & Cripto', description: "explorador i trader, investigant aplicacions de descentralització i gamificació.", accent: []},
-      {title: 'Ciberperformances', description: "combinant livecoding audiovisual i eines sonores DIY.", accent: []}
+      {
+        title: 'Videocreació',
+        description: "Producció i direcció de curts i videoclips, gestionant totes les etapes des del concepte, guió i il·luminació fins a les filmacions, direcció i edició final. Experiència en col·laboració amb artistes i equips per lliurar contingut visual creatiu.",
+        accent: ["guió", "il·luminació", "direcció", "edició final", "col·laboració"]
+      },
+      {
+        title: 'Postproducció de Vídeo',
+        description: "Habilitat en edició, addició d'efectes especials i realització de correcció de color avançada amb DaVinci Resolve. Capaz de millorar la qualitat del metratge i la narrativa a través de tècniques de postproducció per a resultats professionals.",
+        accent: ["DaVinci Resolve", "correcció de color", "edició", "efectes especials"]
+      },
+      {
+        title: 'NFT & Cripto',
+        description: "Actiu en la investigació i experimentació amb descentralització, gamificació i tecnologies blockchain. Participació en projectes de NFT i cripto, explorant les seves aplicacions en art digital i experiències interactives.",
+        accent: ["descentralització", "NFT", "cripto", "gamificació", "blockchain"]
+      },
+      {
+        title: 'Ciberperformances',
+        description: "Disseny i realització d'espectacles audiovisuals en livecoding, creant visuals i paisatges sonors en temps real amb eines electròniques DIY. Enfocament en performances experimentals que combinen tecnologia, música i art.",
+        accent: ["livecoding", "DIY", "audiovisual", "performance", "temps real"]
+      }
     ],
     social: [
-      {title: 'Actitud internacional', description: "amb herència italo-francesa i resident a Barcelona des de 2006.", accent: []},
-      {title: 'Aprenent apassionat', description: "tant autodidacte com en entorns col·laboratius.", accent: []},
-      {title: 'Sentit de l’humor', description: "m’ajuda a reflexionar i resoldre conflictes.", accent: []},
-      {title: 'Disponibilitat', description: "immediata per a treball a temps complet o parcial, presencial o remot.", accent: []}
+      {
+        title: 'Actitud internacional',
+        description: "Nascut de pares italo-francesos i vivint a Barcelona des de 2006, prospero en entorns multiculturals. Còmode treballant amb equips diversos i adaptant-me a noves cultures i perspectives.",
+        accent: ["internacional", "multicultural", "adaptabilitat"]
+      },
+      {
+        title: 'Aprenent apassionat',
+        description: "Impulsat per la curiositat i l'amor per aprendre, sóc autodidacta en moltes àrees i gaudeixo d'entorns col·laboratius i entre iguals. Sempre buscant ampliar les meves habilitats i compartir coneixements amb els altres.",
+        accent: ["autodidacta", "col·laboratiu", "entre iguals", "curiositat"]
+      },
+      {
+        title: 'Sentit de l’humor',
+        description: "Valoro l'humor com una eina per construir relacions, alleugerir tensions i fomentar dinàmiques positives al equip. Crec que un bon sentit de l'humor ajuda a reflexionar, connectar i resoldre conflictes.",
+        accent: ["resolució de conflictes", "treball en equip", "humor"]
+      },
+      {
+        title: 'Disponibilitat',
+        description: "Immediata per a treball a temps complet o parcial, presencial o remot. Flexible i obert a noves oportunitats i desafiaments.",
+        accent: ["immediat", "remot", "flexibilitat"]
+      }
     ],
     studies: [
       {
@@ -453,9 +593,3 @@ export const translations = {
 }
 
 
-export const links = {
-    telephone: '+34 667 895 921',
-  mail: 'notaromaximilien@gmail.com',
-  github: 'https://github.com/mrHumildad',
-  linkedin: 'https://www.linkedin.com/in/maximilien-notaro-486aa7346/',
-}

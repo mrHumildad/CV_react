@@ -7,8 +7,11 @@ import Footer from './components/Footer.jsx'
 import Section from './components/Section.jsx'
 import {translations} from './trans.js'
 import { useEffect } from 'react'
+
+
 function App() {
   const [lang, setLang] = useState('en')
+  
   useEffect(() => {
     document.title = translations[lang].title;
     document.documentElement.lang = lang;
@@ -28,13 +31,13 @@ function App() {
       <Section lang={lang} name={'work'} />
       <Section lang={lang} name={'studies'} />
       <Section lang={lang} name={'projects'} />
-      {/* <Section lang={lang} name={'it'} /> */}
-      <span className='section-title'>{translations[lang].sections.skills}</span>
+      <Section lang={lang} name={'it'} />
+      <span className='section-title'>{translations[lang].sections.other}</span>
       <div id='skills'>
         <Section lang={lang} name={'languages'} className={'skill'} />
-        <Section lang={lang} name={'it'} className={'skill'} />
-        {/* <Section lang={lang} name={'creative'} className={'other'} />
-        <Section lang={lang} name={'social'} className={'other'} /> */}
+{/*         <Section lang={lang} name={'it'} className={'skill'} />*/}
+        <Section lang={lang} name={'creative'} className={'skill'} />
+        <Section lang={lang} name={'social'} className={'skill'} />
       </div>
       <div className={'no-print'} style={{height: '10vh'}}></div>
       <Footer changeLang={changeLang}/>

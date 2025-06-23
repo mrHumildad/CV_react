@@ -5,14 +5,19 @@ import { IoLogoLinkedin, IoCall,  IoMail, IoDocumentText, IoLanguage, IoLogoGith
 
 const Headline = ({titles}) => {
   const separator = <span className='separator'> - </span>;
-  return titles.map((title, index) => (
-    <span key={index}>
-      <span className='user-title'>
+  const titlesMap = titles.map((title, index) => (
+    <>
+      <span id='user-title'>
         {title}
       </span>
       {index < titles.length - 1 && separator}
-    </span>
+    </>
   ));
+  return (
+    <div id='titles-container'>
+      {titlesMap}
+    </div>
+  )
 }
 
 const Presentation = ({userData}) => {

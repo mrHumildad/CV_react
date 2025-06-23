@@ -1,114 +1,181 @@
 @media print {
-@page {
-  margin: 0;
-  size: A4; /* auto is the initial value */
-}
-html {
-  font-size: 11pt;
-  width: 210mm;
-  height: 297mm;
-}
-:root {
-    --white : #ffffff;
+  @page {
+    margin: 14pt;
+    size: A4;
+  }
+  .section-link {
+    display: block;
+    font-size: 10pt;
+    font-style: italic;
+  }
+  :root {
+    --white: #ffffff;
     --black: #000000;
     --dark: #ffffff;
     --life: #ffffff;
     --grey: #555555;
     font-size: 11pt;
-}
-.print {
-  display: block;
-}
-.no-print {
-  display: none;
-}
-#header {
-  position: relative;
-  height: auto;
-  padding: 8pt;
-  background-color: var(--white);
-  color: var(--black);
-  text-align: center;
-}
-.printPres {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.print-link {
-  font-size: 10pt;
-  text-align: left;
+  }
 
-}
-#links {
+  html {
+    font-size: 11pt;
+    width: 210mm;
+    height: 297mm;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+    color: var(--black);
+  }
+
+  * {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+
+  /* Hide elements not for print */
+  .Footer,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Header */
+  #header {
+    position: relative;
+    height: auto;
+    padding: 8pt;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+  }
+
+  /* Presentation */
+  .printPres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10pt;
+  }
+  
+  .print-link {
+    font-size: 10pt;
+    text-align: left;
+  }
+
+  #links {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-}
-#qr {
-  height: 50pt;
-  width: 50pt;
-}
+  }
 
-#headline {
+  #qr {
+    height: 50pt;
+    width: 50pt;
+  }
+  #titles-container {
+    margin-bottom: 6pt;;
+  }
+  #headline {
     font-size: 12pt;
     display: block;
-    margin-top: 0.5cm;
-    margin-bottom: 0.5cm;
-}
-#name {
+    padding-bottom: 10pt;
+  }
+
+  #name {
     color: var(--black);
     font-size: 16pt;
     font-weight: 700;
   }
 
-.item-title, .other-title{
+  /* Titles */
+  .item-title,
+  .other-title {
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: var(--grey);
-    margin-bottom: 0cm;
-}ç
-.user-title {
-  display: inline;
+    text-decoration-thickness: 1pt;
+    margin-bottom: 0pt;
   }
-.separator, .user-title {
-  display: inline;
-}
 
-.section-title {
+  .user-title,
+  .separator {
+    display: inline;
+  }
+
+  .section-title {
     color: var(--black);
     background-color: var(--white);
     font-size: 14pt;
-}
-.items-container, #other-skills{
-  margin-top: 14pt;
-}
+    height: auto !important;
+  }
 
-.item-title, .other-title{
-    text-decoration-color: var(--grey);
-    text-decoration-thickness: 1pt;
-}
-#other-skills {
+  /* Sections and containers */
+  #presentation,
+  .section {
+    margin-top: 0pt;
+    margin-bottom: 4pt;
+  }
+
+  .items-container,
+  #other-skills,
+  #skills {
+    margin-top: 0pt !important;
+    gap: 0pt !important;
+  }
+
+  /* Skills layout */
+  #skills {
     display: flex;
     justify-content: center;
-    gap: 10pt;
-    height: auto;
-    min-height: 0;
+    gap: 8pt;
+    align-items: stretch;
   }
-  #other-skills {
-    display: flex;
-    justify-content: center;
-    gap: 10pt;
-    height: auto;
-    min-height: 0;
-  }
-   .other {
-    width: 31%;
-    min-height: 0;      /* Remove or set to 0 if you want no minimum */
-    height: auto;       /* Let height be determined by content */
+
+  .skill {
+    flex: 1 1 0;
+    min-width: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* or center */
-    justify-content: flex-start; /* Remove space-evenly if not needed */
+  }
+
+
+
+  #languages .items-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .skill .items-container {
+    margin-top: 4pt !important;
+  }
+  .other,
+  .skill {
+    font-size: 10pt;
+    width: 31%;
+    min-height: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* Items */
+  .item,
+  .skill-title {
+    margin-bottom: 4pt !important;
+  }
+
+  .items-container {
+    margin-top: 10pt !important;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 4pt;
   }
 }
