@@ -4,7 +4,7 @@ import { IoLogoLinkedin, IoCall,  IoMail, IoDocumentText, IoLanguage, IoLogoGith
 
 
 const Headline = ({titles}) => {
-  const separator = <span className='separator'> - </span>;
+  const separator = <span className='separator'> # </span>;
   const titlesMap = titles.map((title, index) => (
     <>
       <span className='user-title'>
@@ -29,7 +29,7 @@ const Presentation = ({userData}) => {
         <Headline titles={userData.titles} />
         <div className='printPres print'>
           <div id='qr-container'>
-            <img src='src/assets/qr-code.png' alt="QR Code" id='qr' />
+            <img src='./qr-code.png' alt="QR Code" id='qr' />
           </div>
           <ul id='links'>
               <li className='print-link' id='telephone' ><IoCall/>{links.telephone}</li>
