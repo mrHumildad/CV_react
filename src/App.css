@@ -20,13 +20,18 @@
 }
 .item, .skill-title{
   margin-bottom: 1.2vh;;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 body {  
     font-family: 'Roboto', sans-serif;
-    margin: 0%;
+    margin: 0;
+    padding-right: 2vw;
+    padding-left: 2vw;
     padding: 0;
     background-color: var(--white);
     text-align: center;
+    font-size: 2vh;
 }
 li {
   list-style: none;
@@ -57,16 +62,20 @@ li {
     width: 100%;
 }
 .items-container, #skills{
-  margin-top: 2vh;
+  margin-top: 2.2vh;
 }
-
+#skills {
+  padding: 0 8vw 0 8vw ;
+}
 .item-title, .skill-title{
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: var(--life);
     text-decoration-thickness: 4px;
 }
-
+.skill-title {
+    font-size: 2.5vh;
+}
 .item-title-skill {
     font-weight: 700;
 }
@@ -89,6 +98,12 @@ li {
   animation: slideUp 2s forwards; /* Animation with duration */
   animation-delay: 2s;
   transform: translate(-50%, -0%);
+}
+/* Make all icons inside .Footer scale to 100% of their parent */
+.Footer .footer-butt svg {
+  width: 80%;
+  height: 80%;
+  display: block;
 }
 #header {
   position: fixed;
@@ -172,5 +187,8 @@ li {
     justify-content: space-evenly;
     gap: 1vh;
   }
+  #skills {
+  padding: 0;
+}
 }
 

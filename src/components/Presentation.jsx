@@ -7,7 +7,7 @@ const Headline = ({titles}) => {
   const separator = <span className='separator'> - </span>;
   const titlesMap = titles.map((title, index) => (
     <>
-      <span id='user-title'>
+      <span className='user-title'>
         {title}
       </span>
       {index < titles.length - 1 && separator}

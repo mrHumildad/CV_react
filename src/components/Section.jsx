@@ -23,14 +23,26 @@ const Parraf = ({ text, boldText }) => {
 const Item = ({itemData, className}) => {
     const itemClass = className === 'section' ? '' : '-' + className;
     const titleClass = "item-title" + itemClass;
-    // Fix: wrap period in parentheses
     const period = itemData?.period ? `(${itemData.period}) ` : '';
+
+    const handleClick = (e) => {
+        if (itemData?.link) {
+            window.open(itemData.link, '_blank', 'noopener,noreferrer');
+        }
+    };
+
     return (
-        <li className="item">
+        <li
+            className={`item${itemData?.link ? ' clickable' : ''}`}
+            onClick={handleClick}
+            style={itemData?.link ? { cursor: 'pointer' } : {}}
+        >
             <span className={titleClass}>{itemData.title + ' '}</span>
             {period && <span className='period'>{period}</span>}
             <Parraf text={itemData.description} boldText={itemData.accent}/>
-            <span className='section-link'>{itemData?.link}</span>
+            {itemData?.link && (
+                <span className='section-link print'>{itemData.link}</span>
+            )}
         </li>
     );
 }
@@ -42,7 +54,7 @@ const Section = ({lang, name, className='section'}) => {
         <div className={className} id={name}>
             <span className={`${className}-title`}>
               {titleText}
-              {name=== 'projects' && <span className='no-print'>{translations[lang].sections.click}</span>}
+              {name=== 'projects' && <span className='no-print'>{ translations[lang].sections.click}</span>}
             </span>
             <div className='items-container'>
               {items}

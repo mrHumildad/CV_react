@@ -14,13 +14,13 @@
     --dark: #ffffff;
     --life: #ffffff;
     --grey: #555555;
-    font-size: 11pt;
   }
 
   html {
     font-size: 11pt;
     width: 210mm;
     height: 297mm;
+
   }
 
   body {
@@ -28,8 +28,12 @@
     padding: 0;
     background: var(--white);
     color: var(--black);
-  }
+        font-size: 11pt;
 
+  }
+  .skill-title {
+    font-size: 13pt;
+}
   * {
     -webkit-transition: none !important;
     transition: none !important;
@@ -109,6 +113,8 @@
     background-color: var(--white);
     font-size: 14pt;
     height: auto !important;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
   }
 
   /* Sections and containers */
