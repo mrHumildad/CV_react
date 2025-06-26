@@ -7,13 +7,25 @@ import Footer from './components/Footer.jsx'
 import Section from './components/Section.jsx'
 import {translations} from './trans.js'
 import { useEffect } from 'react'
+import { usePleaseStay } from 'react-use-please-stay';
 
 
 function App() {
   const [lang, setLang] = useState('en')
-  
+  usePleaseStay({
+    titles: [
+      "I",
+      "WANT",
+      "TO",
+      "WORK",
+      "FOR",
+      "YOU!"
+    ],
+    interval: 1000,
+    animationType: Animation.LOOP,
+    alwaysRunAnimations: true
+  })
   useEffect(() => {
-    document.title = translations[lang].title;
     document.documentElement.lang = lang;
   }, [lang]);
   const changeLang = () => {
