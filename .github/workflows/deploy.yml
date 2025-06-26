@@ -42,6 +42,11 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Move build files up
+        run: |
+          mv ./dist/production-files/* ./dist/
+          rmdir ./dist/production-files
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
