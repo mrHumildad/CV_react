@@ -31,14 +31,14 @@ body {
     padding: 0;
     background-color: var(--white);
     text-align: center;
-    font-size: 2vh;
+    font-size: 1.5vh;
 }
 li {
   list-style: none;
 }
 #name {
     color: var(--white);
-    font-size: 5vh;
+    font-size: 3.5vh;
     font-weight: 700;
   }
 
@@ -47,7 +47,7 @@ li {
     font-weight: bold;
     font-optical-sizing: auto;
     margin: auto;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
 }
 
 
@@ -58,7 +58,7 @@ li {
     align-items: center;          /* Center vertically */
     justify-content: center;      /* Center horizontally */
     height: 5vh;
-    font-size: 3vh;
+    font-size: 2.8vh;
     width: 100%;
 }
 .items-container, #skills{
@@ -83,10 +83,12 @@ li {
 .user-title {
   display: block;
 }
-
+.ghost {
+  height: 9vh;
+}
 .Footer {
   background-color: var(--life);
-  height: 10vh;
+  height: 7vh;
   width: 80%;
   left: 50%;
   bottom: 0;
@@ -123,14 +125,14 @@ li {
 .footer-butt {
   background-color: var(--dark);
   color: var(--white);
-  height: 7vh;
-  width: 7vh;
+  height: 6vh;
+  width: 6vh;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
+  border: 1px solid var(--white);
 }
 
 @keyframes slideUp {
@@ -145,11 +147,33 @@ li {
 }
 
 @media only screen and (min-width: 700px) {
+  body {
+    font-size: 2.3vh;
+  }
+  #header, .Footer  {
+    height: 10vh;
+  }
+  #headline {
+    font-size: 2.5vh;
+  }
+  .ghost {
+    height: 12vh;
+  }
+  .footer-butt {
+    height: 7vh;
+    width: 7vh;
+  }
+  #name {
+    font-size: 6vh;
+  }
   .separator {
     display: inline;
   }
   .user-title {
   display: inline;
+  }
+  .section-title {
+    font-size: 3.5vh;
   }
   #skills {
     display: flex;

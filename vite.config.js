@@ -8,5 +8,8 @@ export default defineConfig({
   build: {
     outDir: 'dist', // Output directory
     sourcemap: true // Generate source maps
-  }
+  },
+  server: {
+    host: true
+  },
 })

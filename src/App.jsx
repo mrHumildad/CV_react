@@ -14,11 +14,11 @@ function App() {
   const [lang, setLang] = useState('en')
   usePleaseStay({
     titles: [
-      "I",
-      "WANT",
+      "MAX",
+      "WANTS",
       "TO",
       "WORK",
-      "FOR",
+      "WITH",
       "YOU!"
     ],
     interval: 1000,
@@ -37,7 +37,7 @@ function App() {
   //console.log(userData)
   return (
     <div className="App">
-      <div className={'no-print'} style={{height: '9vh'}}></div>
+      <div className={'no-print ghost'}></div>
       <Header userData={userData}/>
       <Presentation userData={userData}/>
       <Section lang={lang} name={'work'} />
@@ -51,7 +51,7 @@ function App() {
         <Section lang={lang} name={'creative'} className={'skill'} />
         <Section lang={lang} name={'social'} className={'skill'} />
       </div>
-      <div className={'no-print'} style={{height: '10vh'}}></div>
+      <div className={'no-print ghost'} ></div>
       <Footer changeLang={changeLang}/>
       
     </div>

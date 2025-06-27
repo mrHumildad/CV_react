@@ -84,7 +84,7 @@
   #headline {
     font-size: 12pt;
     display: block;
-    padding-bottom: 10pt;
+    
   }
 
   #name {
@@ -134,6 +134,7 @@
   /* Skills layout */
   #skills {
     display: flex;
+    padding: 0;
     justify-content: center;
     gap: 8pt;
     align-items: stretch;
@@ -149,11 +150,9 @@
 
 
   #languages .items-container {
-    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
   }
   .skill .items-container {
     margin-top: 4pt !important;
