@@ -150,7 +150,7 @@ export const translations = {
       work: "Selected Work in IT",
       studies: "Studies",
       projects: "Own Projects",
-      click: "(click to open)",
+      click: " (click to open)",
       footer: "Footer",
       it: "IT Skills",
       other: "Other Skills",
