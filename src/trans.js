@@ -6,7 +6,8 @@ export const links = {
   plantavibras:'https://www.plantavibras.com/',
   perlitas:'https://mrhumildad.github.io/perlitas',
   dwos: 'https://mrhumildad.github.io/dwos',
-  gitTemptate: 'https://github.com/mrHumildad/temptate'
+  gitTemptate: 'https://github.com/mrHumildad/temptate',
+  seps: 'https://mrhumildad.github.io/meteoscat/'
 }
 
 export const translations = {
@@ -138,11 +139,11 @@ export const translations = {
         link: links.perlitas
       },
       {
-        title: "D.W.O.S.",
-        period: "2022 to present",
-        description: "Currently developing a hybrid RPG and football management game built with the SERN stack (SQL, Express.js, React.js, Node.js), featuring NFT and crypto integration as a future expansion.",
-        accent: ["SERN stack", "NFT"],
-        link: links.dwos
+        title: "MeteoSeps",
+        period: "present",
+        description: "currently building Meteoseps, a data scraping and refinement pipeline plus a React client with a MapLibre map to visualise meteorological station averages over selectable date ranges. ",
+        accent: ["React", "scraping", "data visualization", "MapLibre"],
+        link: links.seps
       }
     ],
     sections: {
@@ -284,10 +285,10 @@ es: {
       accent: ["guion", "dirección", "edición", "producción"]
     },
     {
-      title: "D.W.O.S.",
-      period: "2022 hasta la fecha",
-      description: "En desarrollo: juego híbrido RPG/manager futbolístico con stack SERN (SQL, Express.js, React.js, Node.js), integración NFT/cripto y NJFT como idea futura.",
-      accent: ["SERN stack", "NFT", "cripto", "en desarrollo"]
+      title: "MeteoSeps",
+      period: "presente",
+      description: "Actualmente estoy construyendo una App basada en un flujo de data scraping y refinamiento, junto con un cliente en React con un mapa MapLibre para visualizar promedios de estaciones meteorológicas en rangos de fechas seleccionables.",
+      accent: ["data scraping", "React", "MapLibre"]
     }
   ],
   sections: {
@@ -430,9 +431,9 @@ it: {
       accent: ["sceneggiatura", "regia", "montaggio", "produzione"]
     },
     {
-      title: "D.W.O.S.",
-      period: "2022 ad oggi",
-      description: "In sviluppo: RPG/manager calcistico con stack SERN (SQL, Express.js, React.js, Node.js), NFT/crypto e NJFT come idea futura.",
+      title: "MeteoSeps",
+      period: "attualmente",
+      description: "Attualmente sto sviluppando Meteoseps, un flusso di data scraping e raffinazione, insieme a un client React con una mappa MapLibre per visualizzare le medie delle stazioni meteorologiche su intervalli di date selezionabili.",
       accent: ["SERN stack", "NFT", "crypto", "in sviluppo"]
     }
   ],
@@ -576,10 +577,11 @@ cat: {
       accent: ["guió", "direcció", "edició", "producció"]
     },
     {
-      title: "D.W.O.S.",
-      period: "2022 fins ara",
-      description: "En desenvolupament: joc híbrid RPG/manager futbolístic amb stack SERN (SQL, Express.js, React.js, Node.js), integració NFT/cripto i NJFT com a idea futura.",
-      accent: ["SERN stack", "NFT", "cripto", "en desenvolupament"]
+      title: "MeteoSeps",
+      period: "actualment",
+      description: "Actualment estic construint una App basada en un flux de data scraping i refinament, juntament amb un client en React amb un mapa MapLibre per visualitzar mitjanes d’estacions meteorològiques en rangs de dates seleccionables.",
+      accent: ["React", "scraping", "visualització de dades", "MapLibre"],
+      link: links.seps
     }
   ],
   sections: {
